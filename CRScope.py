@@ -314,12 +314,12 @@ if __name__ == "__main__":
     ]
 
     models = [
-#        MyLogisticRegression(),
-#        MyRandomForestClassifier(),
+        MyLogisticRegression(),
+        MyRandomForestClassifier(),
         MyMultinomialNB(),
-#        MyDecisionTreeClassifier(),
-#        MyLinearSVC(),
-#        MyMLPClassifier(),
+        MyDecisionTreeClassifier(),
+        MyLinearSVC(),
+        MyMLPClassifier(),
     ]
     label_list = [model.name for model in models]
 
