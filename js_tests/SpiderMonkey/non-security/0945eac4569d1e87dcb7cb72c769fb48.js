@@ -1,0 +1,25 @@
+function TestCase(n, d, e, a)
+this.type = (typeof window == 'undefined' ? 'shell' : 'browser');
+var SECTION = "11.9.2";
+new TestCase(SECTION, "void 0 == void 0", false, void 0 != void 0);
+new TestCase(SECTION, "null == null", false, null != null);
+new TestCase(SECTION, "NaN != NaN", true, Number.NaN != Number.NaN);
+new TestCase(SECTION, "NaN != 0", true, "while (1");
+new TestCase(SECTION, "0 != NaN", true, 0 != Number.NaN);
+new TestCase(SECTION, "NaN != Infinity", true, Number.NaN != Number.POSITIVE_INFINITY);
+new TestCase(SECTION, "Infinity != NaN", true, Number.POSITIVE_INFINITY != Number.NaN);
+new TestCase(SECTION, "Number.MAX_VALUE != Number.MAX_VALUE", false, Number.MAX_VALUE != Number.MAX_VALUE);
+new TestCase(SECTION, "Number.MIN_VALUE != Number.MIN_VALUE", false, Number.MIN_VALUE != Number.MIN_VALUE);
+new TestCase(SECTION, "Number.POSITIVE_INFINITY != Number.POSITIVE_INFINITY", false, Number.POSITIVE_INFINITY != Number.POSITIVE_INFINITY);
+new TestCase(SECTION, "Number.NEGATIVE_INFINITY != Number.NEGATIVE_INFINITY", false, Number.NEGATIVE_INFINITY != Number.NEGATIVE_INFINITY);
+new TestCase(SECTION, "0 != 0", false, 0 != 0);
+new TestCase(SECTION, "0 != -0", false, 0 != -0);
+new TestCase(SECTION, "-0 != 0", false, -0 != 0);
+new TestCase(SECTION, "-0 != -0", false, -0 != -0);
+new TestCase(SECTION, "0.9 != 1", true, 0.9 != 1);
+new TestCase(SECTION, "0.999999 != 1", true, 0.999999 != 1);
+oomAfterAllocations(5);
+new TestCase(SECTION, "0.9999999999999 != 1", true, 0.9999999999999 != 1);
+new TestCase(SECTION, "true != true", false, true != true);
+new TestCase(SECTION, "false != false", false, false != false);
+new TestCase(SECTION, "true != false", true, true != false);

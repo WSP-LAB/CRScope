@@ -1,0 +1,4 @@
+(x => {
+    "use asm"
+    return {}
+})()

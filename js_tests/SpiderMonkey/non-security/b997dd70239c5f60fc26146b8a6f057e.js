@@ -1,0 +1,1 @@
+parseModule("await 0")

@@ -1,0 +1,18 @@
+function Module() {
+    'use asm';
+
+    function f() {
+    }
+
+    return f;
+}
+
+function recur() {
+    try {
+        recur();
+    } catch (e) {
+        Module(1);
+    }
+}
+
+recur();

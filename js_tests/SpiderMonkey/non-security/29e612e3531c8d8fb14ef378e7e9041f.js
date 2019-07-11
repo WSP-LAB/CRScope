@@ -1,0 +1,1 @@
+eval("(function() { class a { constructor() { } static });");

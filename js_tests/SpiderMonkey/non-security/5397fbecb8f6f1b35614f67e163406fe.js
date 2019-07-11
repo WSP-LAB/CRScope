@@ -1,0 +1,2 @@
+
+gcparam('markStackLimit', .4 );

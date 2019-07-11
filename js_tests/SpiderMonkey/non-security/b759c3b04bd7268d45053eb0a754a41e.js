@@ -1,0 +1,1 @@
+Object.defineProperty(wrap(Int16Array(4)), 1, ({}))

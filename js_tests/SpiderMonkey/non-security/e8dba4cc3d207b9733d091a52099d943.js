@@ -1,0 +1,1 @@
+Reflect.parse("(function() { class a { constructor() { } static get p() it: missing or incorrect StopIteration");

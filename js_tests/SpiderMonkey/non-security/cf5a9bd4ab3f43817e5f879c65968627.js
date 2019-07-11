@@ -1,0 +1,3 @@
+evalInCooperativeThread(`
+evalcx("b");
+`);

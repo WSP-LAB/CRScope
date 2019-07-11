@@ -1,0 +1,2 @@
+offThreadCompileModule("export { x };");
+finishOffThreadModule();
