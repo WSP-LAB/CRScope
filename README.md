@@ -65,4 +65,4 @@ CRash Scope (CRScope) is a ML-guided crash classifier of a given JavaScript engi
 
 3. The final reports will be saved in `result` directory.
 
-More details can be found in the [paper](https://asiaccs2019.github.io/papers/p646-parkA.pdf).
+More details can be found in the [paper](./paper.pdf).
